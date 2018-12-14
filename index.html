@@ -4,16 +4,33 @@
 <head>
  <meta charset = "UTF-8">
  <title>My First Page</title>
-  <h1>Hi There</h1>
+  <h1>Hi There<br>Something after</h1>
 </head>
 <body>
+  <script>
+  var mood = prompt("How are you today?");
+  document.write("You are feeling "+mood+" today.<br>");
+  var x = prompt("State a value for x between 1 and 20.");
+  while (x>20) {
+    x = prompt("X was too big, please enter a value between 1 and 20.")
+  }
+  if (x>10) {
+    document.write("X is bigger than 10!")
+  }
+  else if(x<10) {
+    document.write("X is smaller than 10!")
+  }
+  else if(x==10) {
+    document.write("X is equal to 10!")
+  }
+  </script>
   <figure>
    <img src = "Pictures/Art.png" alt = "Epic Highfive"
 width = 25%>
  </figure>
  <figure>
    <img src = "Pictures/More_Art.png" alt = "Jewelery"
-width = 75%>
+width = 25%>
  </figure>
    <img src="http://worldartsme.com/images/epic-high-five-clipart-1.jpg"
   alt = "Average High Five" width = "25%">
